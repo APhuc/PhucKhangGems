@@ -22,12 +22,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/phucKhangLogo.png",
+        "backgroundColor": "#f6821f"
+      },
+      "package": "com.nguyendaiphuc.phuckhang"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7d4e5269-2d5c-4a86-a89f-61d585206148"
+      }
     }
   }
 }
