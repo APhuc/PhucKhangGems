@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "phuckhang",
+    "name": "Phuc Khang Gems",
     "slug": "phuckhang",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFFFFF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,18 +18,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nguyendaiphuc.phuckhang.test"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/phucKhangLogo.png",
-        "backgroundColor": "#f6821f"
+        "backgroundColor": "#000000"
       },
-      "package": "com.nguyendaiphuc.phuckhang"
+      "permissions":["CAMERA","RECORD_AUDIO","READ_PHONE_STATE","READ_CONTACTS"],
+      "package": "com.nguyendaiphuc.phuckhang.test"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    
     "extra": {
       "eas": {
         "projectId": "7d4e5269-2d5c-4a86-a89f-61d585206148"

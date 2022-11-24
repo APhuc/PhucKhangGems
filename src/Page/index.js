@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar"
 import { useRef, useEffect } from "react"
-import { StyleSheet, View, BackHandler } from "react-native"
+import { StyleSheet, View, BackHandler, SafeAreaView } from "react-native"
 
 import WebView from "react-native-webview"
 
@@ -23,14 +23,14 @@ const HomeScreen = ({ navigation }) => {
   }, [])
 
   return (
-    <View style={styles.container}>
-      <StatusBar style={"auto"} />
+    <SafeAreaView style={styles.container}>
+      {/* <StatusBar style={"auto"} /> */}
       <WebView
         ref={webViewRef}
         style={styles.container}
         source={{ uri: URL_WEBVIEW }}
       />
-    </View>
+    </SafeAreaView>
   )
 }
 
